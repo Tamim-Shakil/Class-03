@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="appointment">
+        <div class="wrapper appointment-wrapper">
+          <div class="artist-img">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="artist"
+            />
+          </div>
+          <div class="appointment-form">
+            <form action="https://formspree.io/f/xrgnybrj" method="POST">
+              <h2>Book a Surgent</h2>
+              <!-- Name  -->
+              <input type="text" placeholder="Jibrail Lee" name="your_name" />
+              <br /><br />
+
+              <!-- Email  -->
+              <input
+                type="text"
+                placeholder="1234..@gmail.com"
+                name="your_email"
+              />
+              <br /><br />
+
+              <!-- Contact  -->
+              <input
+                type="text"
+                placeholder="What'sApp Number"
+                name="your_name"
+              />
+              <br /><br />
+
+              <!-- Address  -->
+              <input
+                type="text"
+                placeholder="Address..."
+                name="your_address"
+              /><br /><br />
+
+              <!-- Message  -->
+              <textarea
+                name="your_expectation"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Hellow, I have expectation ....."
+              ></textarea
+              ><br /><br />
+
+              <!-- Select Gender  -->
+              <div class="gender-group">
+                <label for="gender" class="gender-label">Select Gender</label
+                ><br />
+                <div class="customer">
+                  <label for="gender">Male</label>
+                  <input type="radio" name="gender" value="male" />
+                  <label for="gender">Female</label>
+                  <input type="radio" name="gender" value="female" />
+                </div>
+              </div>
+
+              <!-- Submit Button  -->
+              <input type="submit" value="Hire Me" class="form-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

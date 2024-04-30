@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: rgb(253, 249, 248);
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+svg {
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icons svg {
+  width: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li a {
+  font-size: 20px;
+  color: black;
+}
+
+/* Hero section  */
+
+.hero {
+  /* background-color: rgb(124, 113, 113); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+
+.hero-container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.btn {
+  background-color: rgb(24, 188, 24);
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.all-product {
+  display: flex;
+  padding: 100px 0;
+  gap: 30px;
+}
+
+/* Product Section  */
+.product {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* About Section  */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 30%;
+}
+
+.about-content,
+.about-img {
+  flex-basis: 199%;
+}

@@ -1,0 +1,290 @@
+odby {
+  max-width: 1280px;
+  height: 2876px;
+  background: #ffffff;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1000px;
+  height: 60px;
+  margin: auto;
+  border-radius: 6px;
+}
+
+nav {
+  display: flex;
+  margin-top: 26px;
+  width: 221px;
+  height: 30px;
+  left: 526px;
+  gap: 30px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.top-content {
+  text-align: center;
+}
+
+.header-photo {
+  width: 203.81px;
+  height: 203.81px;
+  margin-top: 159px;
+  margin-left: 537px;
+}
+.how-do {
+  size: 20px;
+  line-height: 32px;
+  width: 513px;
+  height: 64px;
+  color: #777777;
+  margin-left: 383px;
+}
+
+.button {
+  color: #ffffff;
+  display: flex;
+  background-color: #878cff;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  width: 238px;
+  margin-left: 525px;
+}
+
+.content-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1277px;
+  height: 552px;
+  background-color: #878cff1c;
+  margin-top: 100px;
+}
+
+.both-content {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: center;
+  width: 453px;
+  height: 195.75px;
+}
+
+.details h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.details h3{
+  font-size: 20px;
+  line-height: 30px;
+  width: 112px;
+  height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #878CFF;
+  padding: 9px 20px 9px 20px;
+  /* border-radius: 6px; */
+}
+
+.details p {
+  font-size: 18px;
+  line-height: 28.62px;
+  color: #535353;
+}
+
+.product-header {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.all-product-container {
+  display: flex;
+  align-items:flex-end;
+  
+  /* height: 225px; */
+}
+
+.all-product-container img{
+  width: 314.81px;
+  height: 222.22px;
+  border-radius: 8px;
+  box-shadow: box-shadow: 0px 17px 40px 0px #00000033;
+}
+
+
+.all-product-container p{
+  font-size: 20px;
+  line-height: 30px;
+  color: #21243D;
+}
+
+.all-product-container a{
+  font-size: 16px;
+  line-height: 24px;
+  color: #878CFF;
+}
+
+h6{
+  margin-top:10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+}
+
+.last-header {
+  font-size: 40px;
+  line-height: 60px;
+  width: 166px;
+  color: #878CFF;
+  margin-top: 150px;
+  margin-left: 107px;
+}
+
+
+.last-product-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.last-product-container h4{
+  color: #21243D;
+  width: 341.82px;
+  height: 78px;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.all-product-container p{
+  width: 432.27px;
+  height: 96px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.end-part{
+  margin-left: 20px;
+}
+
+.end-part a{
+  color: #878CFF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.end-part p{
+  color: #6F6F6F;
+}
+
+.content-part-1{
+  background-color: #FFFFFF;
+  width: 491px;
+  padding: 5px 10px 5px 10px;
+  height: 369px;
+  border-radius: 4px;
+  border: 1px solid  #E2E2E2;
+}
+
+.content-part-2{
+  background-color: #FFFFFF;
+  width: 491px;
+  height: 369px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  border: 1px solid  #E2E2E2;
+}
+
+.prime-section{
+  width: 1280px;
+  height: 182px;
+  margin-top: 80px;
+  padding: 9px 20px 9px 20px;
+  background-color:#1E1E1E;
+}
+
+.nav-icons{
+  padding-top: 60px;
+  align-items: center;
+  color: #878CFF;
+  display: flex;
+  border-radius: 3px;
+  background-color: #1E1E1E;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.nav-icon-facebook{
+  text-align: center;
+  padding: 4px 4px 4px 4px;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-icon-instagram{
+  background-color: #FFFFFF;
+  padding: 4px 4px 4px 4px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-icon-twitter{
+  text-align: center;
+  width: 36.92px;
+  height: 30px;
+  padding: 4px 4px 4px 4px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.nav-icon-linkedin{
+  text-align: center;
+  padding: 4px 4px 4px 4px;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+}
+
+.bottom-footer{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
