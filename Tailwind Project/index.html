@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bureau</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-grotesk">
+    
+    <!-- Header Section Starts -->
+    <header class="font-grotesk py-8" data-aos="fade-down">
+      <div
+        class="mx-auto sm:px-6 px-4 "
+      >
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
+            <a
+              class="flex items-center justify-items-end gap-1 text-black"
+              href="#"
+            >
+            <p class="italic font-grotesk">the</p>
+              <span class="text-black font-grotesk text-xl font-bold"
+                >Bureau</span
+              >
+              <svg
+                class="size-10"
+                viewBox="0 0 28 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-10 text-sm">
+                <li>
+                  <a
+                    class="text-black transition hover:text-black/75 hover:underline duration-200 font-bold text-[16px]"
+                    href="#"
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-black transition hover:text-black/75 hover:underline duration-200 font-bold text-[16px]"
+                    href="#"
+                  >
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-black transition decoration-none hover:text-black/75 hover:underline duration-200 font-bold text-[16px]"
+                    href="#"
+                  >
+                    Projects
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-black transition hover:text-black/75 hover:underline duration-200 font-bold text-[16px]"
+                    href="#"
+                  >
+                    Blog
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-black transition hover:text-black/75 hover:underline duration-200 font-bold text-[16px]"
+                    href="#"
+                  >
+                    Career
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+              <div class="sm:flex sm:gap-4">
+                <a
+                  class="rounded-full text-sm text-[16px] font-semibold px-5 py-2.5 text-black shadow border-2 border-black hover:bg-black pl-7 duration-500 hover:text-white flex gap-3 items-center justify-center group"
+                  href="#"
+                >
+                  Contacts
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-0 group-hover:size-6 duration-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"
+                    />
+                  </svg>
+                </a>
+
+                <div class="hidden sm:flex">
+                  <a
+                    class="rounded-full text-sm text-[16px] font-semibold px-5 py-2.5 text-white shadow border-2 border-black bg-black pl-7 hover:bg-white duration-500 hover:text-black flex gap-3 items-center justify-center group"
+                    href="#"
+                  >
+                    Get Started
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-0 group-hover:size-6 duration-500"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                        clip-rule="evenodd"
+                      />
+                      <path
+                        d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="block md:hidden">
+                <button
+                  class="rounded bg-gray-100 p-2 text-black transition hover:text-gray-600/75"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-10"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends  -->
+
+    <main>
+      <!-- Hero Section Starts -->
+
+        <section class="hero" data-aos="fade-up">
+        <div class="max-w-[1100px] mx-auto space-y-10 py-8">
+          <div class="flex flex-col items-start gap-10">
+            <!-- Badge  -->
+            <button
+              class="flex gap-1 border-2 border-black p-1 px-2 rounded-full font-semibold text-[14px] hover:bg-black duration-500 hover:text-white items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Palo Alto, CA
+            </button>
+
+            <h2 class="text-8xl font-bold">
+              We <span class="font-lora italic font-light">are a</span> Strategy
+              <br />
+              <span class="font-lora italic font-light">&</span> Design Studio
+            </h2>
+            <p class="text-2xl font-grotesk leading-8">
+              We are helping companies bring new products and services to
+              market.
+              <br />Smart, collaborative, and fun.
+            </p>
+
+            <!-- Social Media Icon Starts -->
+            <div class="flex gap-96" data-aos="fade-up">
+              <div class="flex items-center gap-3">
+                <svg
+                  class="rounded-lg hover:bg-purple-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+                >
+                  <path
+                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                  ></path>
+                  <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                  <path
+                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                  ></path>
+                </svg>
+  
+                <svg
+                  class="rounded-lg hover:bg-purple-600 "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+                >
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                  ></path>
+                </svg>
+  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="rounded-lg hover:bg-purple-600"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+                >
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                  ></path>
+                </svg>
+              </div>
+  
+              <!-- Social Media Icon Ends -->
+              <a
+                class="rounded-full text-sm text-[16px] font-semibold px-5 py-2.5 text-white shadow border-2 border-black bg-black pl-7 hover:bg-white duration-500 hover:text-black flex gap-3 items-center justify-center group"
+                href="#"
+              >
+                About Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-0 group-hover:size-6 duration-500"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+            </div>
+      </section>
+
+      <!-- Hero Section Ends -->
+
+      <!-- Hero Image Carousel  -->
+      <section
+        class="scroll-container relative overflow-hidden after:w-56 after:h-full after:bg-gradient-to-r after:from-white after:to-transparent after:absolute after:top-0 after:left-0 before:w-56 before:h-full before:bg-gradient-to-r before:from-transparent before:to-white before:absolute before:top-0 before:right-0 before:z-50" data-aos="fade-up"
+      >
+        <div class="scroll-image-primary flex gap-2" data-aos="fade-left">
+          <img
+            src="https://framerusercontent.com/images/m28SB5UKZvZjDAfZgv6eCRbA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/zWjH1RjKy40mfuMBqWObEZ8GBM.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/SP5waqWZHe0vWOZk8pfUNrCA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/hXV2MY5r4IUMMrAnydSCD5IYBN8.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/m28SB5UKZvZjDAfZgv6eCRbA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/zWjH1RjKy40mfuMBqWObEZ8GBM.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/m28SB5UKZvZjDAfZgv6eCRbA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/zWjH1RjKy40mfuMBqWObEZ8GBM.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/SP5waqWZHe0vWOZk8pfUNrCA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/hXV2MY5r4IUMMrAnydSCD5IYBN8.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/m28SB5UKZvZjDAfZgv6eCRbA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/zWjH1RjKy40mfuMBqWObEZ8GBM.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/hXV2MY5r4IUMMrAnydSCD5IYBN8.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/m28SB5UKZvZjDAfZgv6eCRbA.jpg?scale-down-to=512"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          />
+          <img
+            src="https://framerusercontent.com/images/zWjH1RjKy40mfuMBqWObEZ8GBM.jpg"
+            alt=""
+            class="h-[350px] w-[400px] flex-shrink-0 object-cover object-top"
+          /> justify-between
+        </div>
+      </section>
+      <!-- Hero Image Carousel End  -->
+
+      <!-- Social Media Sites Starts -->
+      <p class="font-lora flex pl-20 pt-10 text-2xl">Our Clients</p>
+
+      <section
+        class=" pl-20 flex justify-between text-4xl font-bold mx-auto font-grotesk md:flex gap-2  data-aos="fade-up"
+      >
+        <h3>facebook</h3>
+        <h3>Google</h3>
+        <h3>logitech</h3>
+        <h3 class="flex items-center">
+          Linked
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="size-[40px]" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path></svg>
+        </h3>
+        <h3>PHILIPS</h3>
+      </section>
+
+      <!-- Social Media Sites Ends -->
+      <section class="h-screen relative z-10" data-aos="fade-up">
+        <div class="max-w-[1100px] mx-auto py-8">
+          <p class="font-lora italic text-4xl pt-10">Services</p>
+          <h2 class="text-6xl mt-10 font-grotesk font-bold">What we do</h2>
+          <p class="mt-5 font-lora text-2xl">This way, we can cut out all the project management and focus just on the design <br> processes.</p>
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Art & Culture</h4>
+              <p
+                class="text-2xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+              <u>Connecting people through art, stories, food, and culture</u>
+              </p>
+            </div>
+            <div class="service-img">
+              <img src="https://framerusercontent.com/images/c1IDFOlKiZMtWILMJUcX8Sgfw.png" alt="" class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12">
+            </div>
+          </div>
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Consumer Tech</h4>
+              <p
+                class="text-xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+                <u>Making your everyday apps a little more delightful</u>
+              </p>
+            </div>
+            <div class="service-img">
+              <img src="https://framerusercontent.com/images/WfbdnrZqaG3U0ApUh267aovHPkM.png" alt=""
+               class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12">
+            </div>
+          </div>
+
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Fintech</h4>
+              <p
+                class="text-xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+                <u>Providing new ways to share, save, invest, and manage money</u>
+              </p>
+            </div>
+            <div class="service-img">
+              <img src="https://framerusercontent.com/images/HvWiUbj7oQTinXfTDRTJIjzX1g.png" alt="" class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12">
+            </div>
+          </div>
+
+
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Healthcare</h4>
+              <p
+                class="text-xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+                <u>Working to make life healthier and care better</u>
+              </p>
+            </div>
+            <div class="service-img">
+              <img src="https://framerusercontent.com/images/rRbmsVfYsVQfbAw3TRkNUUTF67o.png" alt="" 
+              class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12">
+            </div>
+          </div>
+
+
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Media</h4>
+              <p
+                class="text-xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+               <u> Delivering culture, news, and entertainment</u>
+              </p>
+            </div>
+            <div class="service-img">
+              <img src="https://framerusercontent.com/images/Iqy1zeTy2AH75PP3XcaCBiGTwk.png" alt="" class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12">
+            </div>
+          </div>
+
+
+          <div
+            class="service flex justify-between items-center group duration-500 relative transition-all"
+          >
+            <div class="service-content">
+              <h4 class="text-5xl font-bold font-grotesk mt-8 cursor-pointer underline">Startup</h4>
+              <p
+                class="text-xl opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 duration-500"
+              >
+               <u>Helping founders dream big</u>
+              </p>
+            </div>
+            <div class="service-img">
+
+              <img src="https://framerusercontent.com/images/KWGmc1HURvx1ZKDIp4qFc0M2mY.png" alt=""
+              class="w-[180px] absolute top-0 right-0 z-40 rotate-6 scale-0 group-hover:scale-100 duration-500 group-hover:rotate-12"> 
+
+                
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Project Section Starts -->
+      <div class="projects max-w-[1100px] mx-auto" data-aos="fade-up">
+        <section class="max-w-[1100px] mx-auto" >
+          <P class="text-3xl">Projects</P>
+          <h2 class="font-grotesk font-bold text-6xl pt-3">Selected works</h2>
+          <p class="text-2xl font-lora pt-3">Years of experience to create unique design in agile and fast manner</p>
+  
+          <div class="nature">
+            <img class="pt-10" src="https://framerusercontent.com/images/ASS7dnAsP0byXteUM9M7KYPgJE0.jpg?scale-down-to=1024" alt="">
+            <h2 class="text-3xl pt-8 underline font-lora font-semibold">The Nature</h2>
+            <p class="text-xl font-lora mt-3">Pushing creative boundaries and technologies, you've come to the right place</p>
+            <div class="flex gap-3 mt-3">
+  
+              <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">3D Design</button>
+  
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Marketing</button>
+  
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Social Media</button>
+  
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Video & Web</button>
+  
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Photo</button>
+            </div>
+  
+          </div>
+        </section>
+        <!-- Project Section Ends  -->
+  
+  
+          <!-- Countertouch-Bizantine Starts  -->
+        <div class="Countertouch-Bizantine max-w-[1100px] mx-auto  flex justify-center gap-3 pt-14"data-aos="fade-up">
+          <div class="countertouch flex flex-col">
+            <img src="https://framerusercontent.com/images/zYsu0RmIoAFJEsDVG1LJnbHd2Kw.jpg?scale-down-to=1024" alt="">
+            <a class="text-3xl font-grotesk font-bold pt-6" href="#">Countertouch</a>
+            <p class="text-2xl font-lora pt-2">Years of experience to create unique design in agile and fast <br> manner</p>
+            <div class="button flex gap-2 pt-3">
+              <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Branding</button>
+              <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Design</button>
+            </div>
+          </div>
+  
+          <div class="bizantine flex flex-col pt-14"data-aos="fade-up">
+            <img src="https://framerusercontent.com/images/RZA4Z6XBaWvAk0auyovOFvHeO4.jpg?scale-down-to=1024" alt="">
+            <a  class="text-3xl font-grotesk font-bold pt-6" href="#">Bizantine</a>
+            <p class="text-2xl font-lora pt-2">This way, we can cut out all the project management and <br> focus just on the design processes</p>
+          <div class="button flex gap-2 pt-3">
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white  duration-500">Video & Web</button>
+            <button class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Strategy</button>
+            <button  class="font-semibold font-lora border-2 border-black px-2 py-1 rounded-full hover:bg-black hover:text-white duration-500">Design</button>
+          </div>
+        </div>
+  
+      </div>
+
+      </div>
+      <a class=" max-w-[1100px] mx-auto text-2xl font-lora font-bold  flex justify-center items-end gap-3 mt-12 pt-7 pb-7 pr-96 pl-96 border-2 border-black rounded-full hover:bg-black hover:text-white duration-500 "href="#">See all projects
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+      </a>
+      <!-- Countertouch-Bizantine Ends  -->
+
+
+      <!-- Testimonials Section Starts  -->
+    <div class="testimonials"data-aos="fade-up">
+      <div class="max-w-[1100px] mx-auto ">
+        <p class="text-3xl font-lora font-bold italic mt-14">Testimonials</p>
+      <h2 class="text-6xl pt-6 font-grotesk font-bold">Clients
+        about us</h2>
+      </div>
+
+        <div class="xavier-section"data-aos="fade-up">
+          
+        <h3 class="max-w-[1100px] mx-auto text-5xl font-bold font-grotesk pt-11">“The Bureau impressive expertise and <br> strategy advisory were crucial to achieving <br> our goals. The experience was great in all <br> dimensions.”</h3>
+        <div class="xavier-kim max-w-[1100px] mx-auto mt-12">
+          <img class="size-20 rounded-full" src="https://framerusercontent.com/images/Ri2T1oGkCqmk73HDgshEH0JGWU.png" alt="Xavier Kim Ava-Chung-pic">
+          <div class="name-bio max-w-[1100px] mx-auto">
+            <h4 class="text-2xl font-lora font-black">Xavier Kim</h4>
+            <h4 class="text-xl text-slate-700">CEO at Pixsellz</h4>
+          </div>
+        </div>
+
+        <!-- Down Arrow Sign Start  -->
+        <div class="down-arrow relative"> 
+
+          <a href="#avachung">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="max-w-[1100px] mx-auto h-12 w-12 animate-bounce mt-8">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          
+        </div> 
+        <!-- Down Arrow Sign Ends -->
+        
+
+        <section id="avachung" class=" mt-11 relative">
+          <h3 class="max-w-[1100px] mx-auto text-5xl font-bold font-grotesk">“Working with The Bureau was an amazing <br> experience. We have built an amazing <br> brand together and look forward to working <br> on more exciting projects with you all.”</h3>
+
+        <div class="ava-chung max-w-[1100px] mx-auto mt-11">
+          <img class="size-20 rounded-full" src="https://framerusercontent.com/images/5Q7hn3cQZQTotiOkxeEgT9fIas.png" alt="Ava-Chung-pic">
+          <div class="name-bio max-w-[1100px] mx-auto">
+            <h4  class="text-2xl font-lora font-black">Ava Chung</h4>
+            <h4 class="text-xl text-slate-700">Co-Founder at InBeats</h4>
+          </div>
+        </div>
+
+        <!-- Down Arrow Sign Start  -->
+        <div class="down-arrow relative"> 
+
+          <a href="#avachung">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="max-w-[1100px] mx-auto h-12 w-12 animate-bounce mt-8">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          
+        </div> 
+        <!-- Down Arrow Sign Ends -->
+        </section>
+
+
+        <h3 class="max-w-[1100px] mx-auto text-5xl font-bold font-grotesk mt-11">“Genuinely, your great design has helped us <br> in 100 places. Was one of the best <br> investments we made.”</h3>
+        <div class="naomi-carter max-w-[1100px] mx-auto mt-10">
+          <img class="size-20 rounded-full" src="https://framerusercontent.com/images/r8iSYGohtXaJWZv6pxoOcKb4s.png" alt="Noami-pic">
+          <div class="name-bio max-w-[1100px] mx-auto ">
+            <h4  class="text-2xl font-lora font-black">Naomi Carter</h4>
+            <h4 class="text-xl text-slate-700">CTO at BrickBox</h4>
+          </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section Ends  -->
+
+
+    <!-- Career Section Starts -->
+
+    <div class=" max-w-[1100px] mx-auto mt-20"data-aos="fade-up">
+      <p class="text-3xl font-lora italic mt-6 font-bold">Career</p>
+    <h1 class="text-7xl pt-6 font-grotesk font-bold">Join the team!</h1>
+    <p class="text-3xl font-thin font-lora mt-5">Pushing creative boundaries and technologies, you've come to the right place.</p>
+    </div>
+
+    <!-- WebGl Developer Section Starts -->
+    <div class="webgl-developer max-w-[1100px] mx-auto mt-10"data-aos="fade-up">
+      <h2 class="text-5xl pt-6 font-grotesk font-bold">WebGL Developer
+
+        ↓</h2>
+        <div class="max-w-[1100px] mx-auto flex gap-x-28 mt-6 text-xl">
+          <p>We are is looking for a Front-end developer with an in-depth <br> knowledge of React.js and an affinity for the creative side of <br> development. We are looking for someone who will be able to develop <br> and maintain creative websites, contribute to internal projects and <br>planning discussions, develop reusable code and libraries for future <br> use, document code and collaborate with the UI/UX Designers, in <br> order to improve the final product.</p>
+
+        <div class="apply-section text-xl font-semibold font-lora">
+          <p>Job Status: Full time</p>
+          <p>Experience: 4 years</p>
+          <p>Location: Palo Alto, CA</p>
+          <a class="flex gap-1 items-end justify-center rounded-full mt-4 bg-black px-4 py-3 text-white hover:bg-purple-500 text-center" href="#">Apply Now
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.234V16H4V4h16v12z"></path><circle cx="15" cy="10" r="2"></circle><circle cx="9" cy="10" r="2"></circle></svg></a>
+        </div>
+        </div>
+      </div>
+
+      <div class=" max-w-[1100px] mx-auto text-xl mt-5"data-aos="fade-up">
+        <p>• 
+
+          Minimum 4 years experience in creative development</p>
+          <p>• 
+
+            Minimum 2 years experience with React.js</p>
+            <p>• 
+
+              Excellent knowledge of modern HTML, CSS, and Javascript (ES6)</p>
+              <p>• 
+
+                Good knowledge of animation libraries (ex: GSAP) & build tools (Node.js, Webpack)</p>
+                <p>• 
+
+                  Basic knowledge of Git, and popular CMS platforms</p>
+                  <p>• 
+
+                    Bonus: WebGL, Canvas, CSS-in-JS, GraphQL, SSR/SSG</p>
+      </div>
+        
+        
+    <!-- WebGl Developer Section Ends -->
+
+    <!-- Front-End Developer Setion Starts -->
+    <div class="front-end-developer max-w-[1100px] mx-auto mt-10"data-aos="fade-up">
+      <h2 class="text-5xl pt-6 font-grotesk font-bold">Front-End Developer↓</h2>
+    <div class="max-w-[1100px] mx-auto flex gap-x-28 mt-6 text-xl">
+      <p>We are is looking for a Front-end developer with an in-depth <br> knowledge of React.js and an affinity for the creative side of <br> development. We are looking for someone who will be able to develop <br> and maintain creative websites, contribute to internal projects and  <br> planning discussions, develop reusable code and libraries for future <br> use, document code and collaborate with the UI/UX Designers, in <br> order to improve the final product.</p>
+    <div class="apply-section text-xl font-semibold font-lora">
+      <p>Job Status: Full time</p>
+      <p>Experience: 4 years</p>
+      <p>Location: Palo Alto, CA</p>
+      <a class="flex gap-1 items-end justify-center rounded-full mt-4 bg-black px-4 py-3 text-white hover:bg-purple-500 text-center" href="#">Apply Now<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.234V16H4V4h16v12z"></path><circle cx="15" cy="10" r="2"></circle><circle cx="9" cy="10" r="2"></circle></svg></a>
+    </div>
+    </div>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto text-xl mt-5"data-aos="fade-up">
+      <p>• 
+
+        Minimum 4 years experience in creative development</p>
+        <p>• 
+
+          Minimum 2 years experience with React.js</p>
+        <p>• 
+
+          Excellent knowledge of modern HTML, CSS, and Javascript (ES6)</p>
+        <p>• 
+
+          Good knowledge of animation libraries (ex: GSAP) & build tools (Node.js, Webpack)</p>
+        <p>• 
+
+          Basic knowledge of Git, and popular CMS platforms</p>
+        <p>• 
+
+          Bonus: WebGL, Canvas, CSS-in-JS, GraphQL, SSR/SSG</p>
+        <p>• 
+
+          Experience with cross-browser compatibility</p>
+          <p>• 
+
+            Sharp attention to detail</p>
+    </div>
+     
+    
+    <!-- Front-End Developer Setion Ends -->
+
+
+    <!-- UI/UX Designer Section Starts -->
+    <div class="ui-ux-designer max-w-[1100px] mx-auto mt-10"data-aos="fade-up">
+      <h2 class="text-5xl pt-6 font-grotesk font-bold">UI/UX Designer↓</h2>
+      <div class="max-w-[1100px] mx-auto flex gap-x-28 mt-6 text-xl">
+        <p>We are is looking for a Front-end developer with an in-depth <br> knowledge of React.js and an affinity for the creative side of <br> development. We are looking for someone who will be able to develop <br> and maintain creative websites, contribute to internal projects and <br> planning discussions, develop reusable code and libraries for future <br> use, document code and collaborate with the UI/UX Designers, in <br> order to improve the final product.</p>
+      <div class="apply-section text-xl font-semibold font-lora">
+        <p>Job Status: Full time</p>
+        <p>Experience: 4 years</p>
+        <p>Location: Palo Alto, CA</p>
+        <a class="flex gap-1 items-end justify-center rounded-full mt-4 bg-black px-4 py-3 text-white hover:bg-purple-500 text-center " href="#">Apply Now<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.234V16H4V4h16v12z"></path><circle cx="15" cy="10" r="2"></circle><circle cx="9" cy="10" r="2"></circle></svg></a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="max-w-[1100px] mx-auto text-xl mt-5"data-aos="fade-up">
+      <p>• 
+
+        Minimum 4 years experience in creative development</p>
+      <p>• 
+
+        Minimum 2 years experience with React.js</p>
+      <p>• 
+
+        Excellent knowledge of modern HTML, CSS, and Javascript (ES6)</p>
+      <p>• 
+
+        Good knowledge of animation libraries (ex: GSAP) & build tools (Node.js, Webpack)</p>
+      <p>• 
+
+        Basic knowledge of Git, and popular CMS platforms</p>
+      <p>• 
+
+        Bonus: WebGL, Canvas, CSS-in-JS, GraphQL, SSR/SSG</p>
+      <p>• 
+
+        Experience with cross-browser compatibility</p>
+      <p>• 
+
+        Sharp attention to detail</p>
+    </div>
+      
+    
+
+    <!-- UI/UX Designer Section Ends -->
+
+    <!-- Career Details starts  -->
+    <div class=" max-w-[1700px] mx-auto mt-28 flex gap-96 text-4xl font-grotesk font-bold"data-aos="fade-up">
+
+      <div>
+        <h1 class="text-7xl font-bold">6</h1>
+      <p>years</p>
+      </div>
+
+      <div>
+        <h1 class="text-7xl font-bold">85</h1>
+      <p>clients</p>
+      </div>
+
+      <div>
+        <h1 class="text-7xl font-bold">359</h1>
+      <p>projects</p>
+      </div>
+
+      <div>
+        <h1 class="text-7xl font-bold">7</h1>
+      <p>awards</p>
+      </div>
+
+    </div>
+    <!-- Career Details Ends -->
+
+    <!-- Career Section Ends   -->
+
+    <!-- Blog Section Starts  -->
+    <div class="max-w-[1100px] mx-auto mt-36"data-aos="fade-up">
+      <h2 class="text-3xl font-grotesk font-thin italic">Blog</h2>
+    <h2 class="font-grotesk text-7xl font-black mt-6">Latest articles</h2>
+    </div>
+
+    <div class="feature"data-aos="fade-up">
+      <!-- First Section Starts  -->
+      <div class="max-w-[1136px] mx-auto mt-12 flex gap-5">
+        <div class="book-series">
+          <img src="https://framerusercontent.com/images/lXvNACXPAgKDNRtPZ84B6GGpjw.png" alt="">
+          <p class="text-xl font-thin font-lora mt-5">May 20, 2023</p>
+          <a class="font-bold text-3xl mt-5" href="#">How to Solve Issues With Design Web</a>
+          <p class="text-xl font-thin font-lora mt-3">Used by these companies to maximize <br> their online presence and reach their <br> goals</p>
+        </div>
+  
+        <div class="coffee-photo">
+          <img src="https://framerusercontent.com/images/iojqvh6KFHe4pi4FLeXrlUeqig.png" alt="">
+          <p class="text-xl font-thin font-lora mt-5">May 10, 2023</p>
+          <a class="font-bold text-3xl mt-5" href="#">24 Hours to Improving <br> Design Web</a>
+          <p class="text-xl font-thin font-lora mt-3">This article explores the potential of <br> design startup web to revolutionize the <br> way businesses create</p>
+        </div>
+  
+        <div class="monitor-pic">
+          <img src="https://framerusercontent.com/images/Veeh5aMDG6xdpf4zPeqcgRqGSg.png" alt="">
+          <p class="text-xl font-thin font-lora mt-5">Mar 16, 2023</p>
+          <a class="font-bold text-3xl mt-5" href="#">The Most Innovative Things <br> Happening With Design Web</a>
+          <p class="text-xl font-thin font-lora mt-3">It provides an in-depth look at the tools <br> and strategies </p>
+        </div>
+      </div>
+    <!-- First Section Ends  -->
+
+
+      <!-- Second Section Starts  -->
+      <div class="max-w-[1136px] mx-auto mt-12 grid grid-cols-3 gap-5">
+        <div class="flag-pic">
+          <img class="h-64" src="https://framerusercontent.com/images/eS7E9Mv6oUTdPDJ9dZlOXhju3xI.jpg?scale-down-to=1024" alt="">
+          <p class="text-xl font-thin font-lora mt-5">May 12, 2023</p>
+          <a class="font-bold text-3xl mt-5" href="#">The Best Design Startup Website of 2023</a>
+          <p class="text-xl font-thin font-lora mt-3">Used by these companies to maximize <br> their online presence and reach their <br> goals</p>
+      </div>
+
+      <div class="team-pic">
+        <img class="h-64" src="https://framerusercontent.com/images/ZgCZ3Ttsj5eTJ99Jde4Kc0aFfn8.jpg?scale-down-to=1024" alt="">
+        <p class="text-xl font-thin font-lora mt-5">Jun 9, 2023</p>
+        <a class="font-bold text-3xl mt-5" href="#">Unlocking the Potential of Design Startup Web</a>
+        <p class="text-xl font-thin font-lora mt-3">This article explores the potential of design startup web to revolutionize the way businesses create</p>
+      </div>
+
+      <div class="boat-pic">
+        <img class="h-64 w-[100%]" src="https://framerusercontent.com/images/jcGBWX1TXHUS0x5z1Ddpqz74wo.jpg?scale-down-to=2048" alt="">
+        <p class="text-xl font-thin font-lora mt-5">Apr 5, 2023</p>
+        <a class="font-bold text-3xl mt-5" href="#">The Impact of Design Startup Web on the Design Industry</a>
+        <p class="text-xl font-thin font-lora mt-3">It provides an in-depth look at the tools and strategies</p>
+      </div>
+      </div>
+      <!-- Second Section Ends  -->
+    </div>
+    <!-- Blog Section Ends  -->
+
+    <!-- Contact Section Starts  -->
+    <div class="max-w-[1100px] mx-auto mt-24"data-aos="fade-up">
+      <h3 class="font-grotesk font-bold text-3xl italic">Contacts</>
+    <h1 class="text-6xl font-bold mt-6">Work with us</h1>
+    <p class="font-lora text-2xl max-w-[1100px] mx-auto mt-6">We are eager to learn about your organization and to help you achieve a well-defined out-of-the-box visual strategy.</p>
+
+    <div class="mt-28">
+      <p class="text-2xl font-lora font-bold">You can contact us at:</p>
+    <h2 class="text-5xl font-bold pt-5">info@pixsellz.io</h2>
+    <a class="flex justify-center gap-1 rounded-full mt-5 w-[15%] bg-black px-5 py-5 text-white font-bold hover:bg-red-500 text-center href="#">Get In Touch<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.234V16H4V4h16v12z"></path><circle cx="15" cy="10" r="2"></circle><circle cx="9" cy="10" r="2"></circle></svg></a>
+  </div>
+
+    <br>
+
+    <div class="max-w-[1100px] mx-auto  flex justify-between">
+
+      <div class="mt-6">
+        <p class="font-lora text-2xl font-light">Based in</p>
+    <h4 class="font-grotesk font-bold text-2xl">★ Palo Alto, CA</h4>
+    <p class="font-lora text-2xl font-light">250 Hamilton Avenue Palo </p>
+    <p class="font-lora text-2xl font-light">Alto, CA 94301</p>
+    <br>
+    <p class="font-lora text-2xl font-light">(201) 555-0124</p>
+
+      </div>
+
+      
+     <div class="mt-6">
+      <p class="font-lora text-2xl font-light">Our Socials</p>
+      <div class="flex flex-col gap-3 font-grotesk font-bold text-3xl">
+        <a href="#">Instagram</a>
+    <a href="#">Dribbble</a>
+    <a href="#">Twitter</a>
+      </div>
+     </div>
+
+  <div class=" mt-6 flex gap-1 items-start">
+    <p class="mt-2.5 font-light"><i>the</i></p><a class="mt-3 font-bold" href="#">Bureau</a>
+    <svg
+    class="size-10 flex items-start"
+    viewBox="0 0 28 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+      fill="currentColor"
+    />
+  </svg>
+    <!-- Based-Bureau Ends  -->
+
+  </div>
+    </div>
+    <!-- Contact Section Ends  -->
+
+    </main>
+    
+        <footer class= "p-8 mt-10 flex justify-between text-xl font-light">
+          <p>© 2018 / 2023 Pixsellz – Design Goodies Team</p>
+          <div class="flex gap-12">
+            <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <a href="#">Framer ↗</a>
+          </div>
+        </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 2000,
+        });
+      </script>
+  </body>
+</html> 
